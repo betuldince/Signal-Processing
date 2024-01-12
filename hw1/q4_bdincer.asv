@@ -1,0 +1,16 @@
+%Question 4
+%Constants
+t=0:0.0001:9 ; %Time
+b=[0 0.5 1 1.5 2]; %Omega values
+%Cos plots for given omega values
+for i = 1:1:5
+    y1 = cos(b(i)*pi*t);
+    figure
+    plot(y1)
+end
+t1=0:0.1:9; 
+for i = 1:1:5
+    y2 = cos(b(i)*pi*t1);
+    figure
+    stem(y2)
+end
